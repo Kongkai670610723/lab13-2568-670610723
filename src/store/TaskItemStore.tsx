@@ -1,11 +1,14 @@
+//TaskItemStore.tsx
 import { create } from "zustand";
 import { v4 as uuidv4 } from "uuid";
 import { type TaskItemProps } from "../libs/Task";
 
+
+
 export const useTaskStore = create<TaskItemProps>((set) => ({
   tasks: [], //เริ่มต้น
   setTasks: (tasks) => set({ tasks }),
-  addTask: (title, description, dueDate) =>
+  addTask: (title, description, dueDate , assignees) =>
     set((state) => ({
       tasks: [
         ...state.tasks,
@@ -13,6 +16,7 @@ export const useTaskStore = create<TaskItemProps>((set) => ({
           id: uuidv4(),
           title,
           description,
+          assignees,
           dueDate,
           isDone: false,
           doneAt: null,

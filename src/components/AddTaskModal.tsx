@@ -112,7 +112,7 @@ export default function AddTaskModal({
           minDate={new Date()}
           value={dueDate}
           onChange={(date) => setdueDate(date ? date : null)}
-          error={!dueDate?.trim() ? "Due Date is required" : false}
+          error={!dueDate? "Due Date is required" : false}
         />
         {/* เพิ่ม MultiSelect ตรงนี้*/}
         <MultiSelect

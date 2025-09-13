@@ -50,7 +50,7 @@ export default function TodoTablePage() {
       <Table.Td>
         {task.assignees.length > 0 &&
         task.assignees.map((ass) => (
-          <Badge variant="light" mt={2} color="red">
+          <Badge variant="light" mt={2} color="blue">
             {ass}
           </Badge>
         ))}

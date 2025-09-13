@@ -1,3 +1,4 @@
+//MainLayout.tsx
 import { Outlet } from "react-router-dom";
 import { AppShell } from "@mantine/core";
 import HeaderComponent from "../components/Header";
@@ -27,8 +28,8 @@ export default function MainLayout() {
       <AppShell.Footer>
         <FooterComponent
           year="2025"
-          fullName="chanadda"
-          studentId="670612039"
+          fullName="Phurin Inthajak"
+          studentId="670610723"
         />
       </AppShell.Footer>
 

@@ -1,3 +1,4 @@
+//Footer.ts
 interface FooterProps  {
   year: string;
   fullName: string;

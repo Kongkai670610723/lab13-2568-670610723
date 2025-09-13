@@ -46,9 +46,9 @@ export default function HomePage() {
                 <Stack>
                   {/* เพิ่ม assignees ตรงนี้*/}
                   <Group>
-                    {task.assignees.length > 0 && task.assignees.map((a) =>(
-                      <Badge color="blue" variant="light">
-                        {a}
+                    {task.assignees.length > 0 && task.assignees.map((ass) =>(
+                      <Badge variant="light" color="blue">
+                        {ass}
                       </Badge>
                     ))}
                   </Group>

@@ -50,7 +50,7 @@ export default function TodoTablePage() {
       <Table.Td>
         {task.assignees.length > 0 &&
         task.assignees.map((ass) => (
-          <Badge variant="light" mt={2} color="blue">
+          <Badge variant="light" mt={2} color="red">
             {ass}
           </Badge>
         ))}
@@ -83,7 +83,7 @@ export default function TodoTablePage() {
               <Table.Th>Due Date</Table.Th>
               <Table.Th>Completed</Table.Th>
               <Table.Th>Actions</Table.Th>
-              
+
               {/* เพิ่ม table header assignees ตรงนี้*/}
 
               <Table.Th>Assignees</Table.Th>

@@ -1,3 +1,4 @@
+//AddTaskModal.tsx
 import {
   Modal,
   Stack,
@@ -94,6 +95,7 @@ export default function AddTaskModal({
           error={!dueDate?.trim() ? "Due Date is required" : false}
         />
         {/* เพิ่ม MultiSelect ตรงนี้*/}
+        <MultiSelect/>
         <Button onClick={handleAdd}>Save</Button>
       </Stack>
     </Modal>
